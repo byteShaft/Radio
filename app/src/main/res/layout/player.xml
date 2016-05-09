@@ -62,8 +62,8 @@
         <ProgressBar
             android:id="@+id/progress_bar"
             style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="69dp"
-            android:layout_height="69dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_centerInParent="true"
             android:max="500"
             android:progress="0" />
@@ -78,7 +78,7 @@
 
             <Button
                 android:id="@+id/button_toggle_playback"
-                android:background="@drawable/play"
+                android:background="@drawable/play_image"
                 android:layout_width="64dp"
                 android:layout_height="64dp" />
 

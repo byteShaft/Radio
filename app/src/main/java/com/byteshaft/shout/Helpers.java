@@ -24,9 +24,9 @@ public class Helpers extends ContextWrapper {
         Player player = Player.getInstance();
         if (player != null && player.mPlaybackButton != null) {
             if (AppGlobals.getSongStatus()) {
-                player.mPlaybackButton.setBackgroundResource(R.drawable.apollo_holo_dark_pause);
+                player.mPlaybackButton.setBackgroundResource(R.drawable.pause);
             } else {
-                player.mPlaybackButton.setBackgroundResource(R.drawable.play);
+                player.mPlaybackButton.setBackgroundResource(R.drawable.play_image);
             }
         }
     }

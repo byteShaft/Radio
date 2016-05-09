@@ -70,9 +70,14 @@ public class Player extends Fragment implements View.OnClickListener {
             getActivity().startService(intent);
         }
         if (AppGlobals.getSongStatus()) {
-            mPlaybackButton.setBackgroundResource(R.drawable.apollo_holo_dark_pause);
+            mPlaybackButton.setBackgroundResource(R.drawable.pause);
         } else {
-            mPlaybackButton.setBackgroundResource(R.drawable.play);
+            mPlaybackButton.setBackgroundResource(R.drawable.play_image);
+        }
+        if (AppGlobals.getSongStatus()) {
+            textView.setText("Playing");
+        } else {
+            textView.setText("Stopped");
         }
     }
 
@@ -185,9 +190,9 @@ public class Player extends Fragment implements View.OnClickListener {
             stopProgressBar();
         }
         if (AppGlobals.getSongStatus()) {
-            mPlaybackButton.setBackgroundResource(R.drawable.apollo_holo_dark_pause);
+            mPlaybackButton.setBackgroundResource(R.drawable.pause);
         } else {
-            mPlaybackButton.setBackgroundResource(R.drawable.play);
+            mPlaybackButton.setBackgroundResource(R.drawable.play_image);
         }
     }
 }
